@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country">
+        <item>United States of America</item>
+        <item>China</item>
+        <item>Brazil</item>
+    </string-array>
+
+    <string-array name="China">
+        <item>Beijing</item>
+        <item>Shanghai</item>
+        <item>Hong Kong</item>
+        <item>Jiangsu</item>
+        <item>Tianjin</item>
+        <item>Chongqing</item>
+        <item>Inner Mongol</item>
+        <item>Sichuan</item>
+        <item>Hubei</item>
+        <item>Hunan</item>
+        <item>Hebei</item>
+        <item>Henan</item>
+        <item>Shanxi</item>
+        <item>Shaanxi</item>
+        <item>Guizhou</item>
+        <item>Liaoning</item>
+        <item>Jilin</item>
+        <item>Heilongjiang</item>
+        <item>Hainan</item>
+        <item>Guangdong</item>
+        <item>Guangxi</item>
+    </string-array>
+
+    <string-array name="empty">
+    </string-array>
+</resources>

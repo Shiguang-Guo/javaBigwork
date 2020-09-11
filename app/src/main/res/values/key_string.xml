@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Weibo -->
+    <string name="sina_weibo_key">3066914544</string>
+    <string name="sina_weibo_redirecturi">http://www.tsinghua.edu.cn/publish/newthu/index.html</string>
+
+    <!-- Weixin -->
+    <string name="weixin_key">wx671e6c77306f9200</string>
+
+    <!-- QQ -->
+    <string name="tencent_qq_appid">1106407140</string>
+
+</resources>

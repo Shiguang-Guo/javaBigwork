@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/nav_news_title" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history"
+            android:title="@string/nav_history_title" />
+        <item
+            android:id="@+id/nav_chart"
+            android:icon="@drawable/ic_chart"
+            android:title="@string/nav_chart_title" />
+        <item
+            android:id="@+id/nav_kg"
+            android:icon="@drawable/ic_knowledge"
+            android:title="@string/nav_kg_title" />
+        <item
+            android:id="@+id/nav_scholar"
+            android:icon="@drawable/ic_scholar"
+            android:title="@string/nav_scholar_title" />
+        <item
+            android:id="@+id/nav_cluster"
+            android:icon="@drawable/ic_event"
+            android:title="@string/nav_cluster_title" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_settings_title" />
+
+    </group>
+
+</menu>

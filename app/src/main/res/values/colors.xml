@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 白天颜色 -->
+    <color name="colorPrimary">#FFAA00</color>
+    <color name="colorPrimaryDark">#ee9900</color>
+    <color name="colorAccent">#FF3322</color>
+
+    <color name="colorNavTitle">#ff24de</color>
+
+    <color name="colorTabSelectedText">#FFFFFF</color>
+    <color name="colorTabText">#994400</color>
+
+    <color name="colorCard">#EDF1FA</color>
+    <color name="colorCardRead">#FFFFFF</color>
+    <color name="colorSelectorNormal">#00000000</color>
+    <color name="colorSelectorPress">#22000000</color>
+
+    <color name="colorBackground">#E5E5E5</color>
+    <color name="colorBackgroundLight">#F2F2F2</color>
+    <color name="colorTitle">#333333</color>
+    <color name="colorText">#333333</color>
+    <color name="colorDetail">#999999</color>
+
+    <color name="black_bg">#d0000000</color>
+</resources>

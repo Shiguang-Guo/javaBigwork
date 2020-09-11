@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/scholar_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="@string/transition_news_img">
+
+            <net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout
+                android:id="@+id/scholar_collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="10dp"
+                app:expandedTitleTextAppearance="@style/TextAppearance.ExpandedTitle"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:maxLines="3">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/scholar_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--        android:layout_marginLeft="10dp"-->
+                    <!--        android:layout_marginRight="10dp"-->
+                    <!--        android:layout_margin="5dp"-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/scholar_detail_image"
+                            android:layout_width="100dp"
+                            android:layout_height="125dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/kg_image"
+                            android:scaleType="centerCrop"
+                            android:transitionName="@string/trans" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/scholar_detail_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.3"
+                                    android:textSize="45px" />
+
+                                <TextView
+                                    android:id="@+id/scholar_detail_indic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:textSize="30px" />
+
+                                <TextView
+                                    android:id="@+id/scholar_detail_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:textSize="35px" />
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:id="@+id/scholar_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/scholar_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="主页" />
+
+                        <TextView
+                            android:id="@+id/scholar_home_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/scholar_work"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="履历" />
+
+                        <TextView
+                            android:id="@+id/scholar_work_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/scholar_bio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="简介" />
+
+                        <TextView
+                            android:id="@+id/scholar_bio_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/scholar_edu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="教育经历" />
+
+                        <TextView
+                            android:id="@+id/scholar_edu_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/scholar_bottom_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:background="@color/colorBackgroundLight">-->
+
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0.5dp"-->
+    <!--            android:layout_gravity="top"-->
+    <!--            android:background="@color/colorBackground" />-->
+
+    <!--    </FrameLayout>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
